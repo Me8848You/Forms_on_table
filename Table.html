@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="front.css">
+
+    <style>
+        sup{
+            color: red;
+        }
+        body{
+            /* background-color: cyan; */
+            background-image: url() ;
+            background-color: purple;
+            visibility: 30%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <form action="backend.php" method="post">
+        <table border="4" cellspacing="4" cellpadding="5">
+             <caption>* are compulsory</caption>
+             <tr>
+                 <th colspan="4"><em> Register Here</em>
+                </th>
+             </tr>
+
+             <tr>
+                 <th>
+                     <label for="name"><sup>*</sup> First Name</label>
+                 </th>
+                 <td >
+                     <input type="text" name="" id="name">
+                 </td>
+                 <th><label for="lname"><sup>*</sup> Last Name</label></th>
+                 <td><input type="text" name="" id="lname"></td>
+             </tr>
+             <tr>
+                 <th align="left">
+                     <label for="email"> <sup>*</sup> Email :</label>
+                 </th>
+                 <td colspan="3" ><input type="email" name="email" id="email" placeholder="Username@gmail.com" required></td>
+             </tr>
+             <tr>
+                 <th><label for="pass"><sup>*</sup>  Password:</label></th>
+                 <td><input type="password" name="pass" id="pass" required></td>
+                 <th><label for="repass"><sup>*</sup> Re-Password</label></th>
+                 <td><input type="password" name="" id="repass"></td>
+             </tr>
+             <tr>
+                 <td>Gender</td>
+                 <td>Male <input type="radio" name="gender" id="gender">
+                Female <input type="radio" name="gender" id="gender"></td>
+                <th>
+                    Country
+                </th>
+                <td>
+                 <select name="country" id="country">
+                     <option value="selcted">Select option</option>
+                     <option value="India">India</option>
+                     <option value="Nepal">Nepal</option>
+                 </select>
+                </td>
+             </tr>
+             <tr>
+                 <th><label for="photo">Your Photo</label></th>
+                 <td colspan="3">
+                     <input type="file" name="photo" id="photo">
+                 </td>
+             </tr>
+             <tr>
+                 <th colspan="2">
+                    <input type="submit" value="Submit">
+                 </th>
+
+                 
+                 
+                 <th colspan="2">
+                     <input type="reset" value="REset">
+                    </label></th>
+                </tr>
+            </tr>
+
+
+
+
+        </table>
+    </form>
+
+    <hr>
+    <br>
+
+</body>
+</html>
